@@ -45,6 +45,23 @@ img{
     margin: 0;
 }
 
+/** Grid **/
+@media (min-width: 76.8rem) {
+    .grid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .columnas-4{
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .columnas-6{
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-8{
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+}
+
 /** Botones **/
 .btn {
     display:block;
@@ -58,7 +75,7 @@ img{
     text-transform: uppercase;
     font-size: 2rem;
 }
-@media (min-width: 48rem) {
+@media (min-width: 60rem) {
     .btn {
         display: inline-block;
     }
@@ -103,6 +120,8 @@ img{
     text-align: center;
     display:block;
     font-size: 1.8rem;
+    color:#ffffff;
+    text-decoration: none;
 }
 @media (min-width: 76.8rem) {
     .navegacion a{
@@ -179,6 +198,7 @@ img{
     list-style: none;
 }
 .curso{
+    padding-top: 3rem;
     padding-bottom: 3rem;
     border-bottom: .1rem solid #e1e1e1;
 }
@@ -190,6 +210,23 @@ img{
     font-weight: 700;
     font-size: 2rem;
 }
-.curso p span{
+.curso p span,
+.curso p.descripcion{
     font-weight: 400;
+}
+/** Footer **/
+.site-footer{
+    background-color: #000000;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+.site-footer p{
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+.site-footer p span{
+    font-weight: 700;
 }
